@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <section class="preview" id="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+
+    // Put your code here
+    let TaylorSwift = {
+      name : 'Taylor Swift',
+      nationality : 'USA',
+      genre : "country",
+      formed : 1999,
+      members : 1,
+      split : false,
+      albums : [{ name: "bob", released: 1890}, { name: "sara", released: 2003}]
+    }
+
+    bandInfo = `${TaylorSwift.name} is from ${TaylorSwift.nationality}. They\'ve been active since ${TaylorSwift.formed} and do ${TaylorSwift.genre} music. Their first album that they released was ${TaylorSwift.albums[0].name} in ${TaylorSwift.albums[0].released}.`;
+
+    // Don't edit the code below here
+    let section = document.getElementById("preview");
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+    
+  </script>
+
+</html>
